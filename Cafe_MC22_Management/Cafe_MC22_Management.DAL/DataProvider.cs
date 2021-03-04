@@ -20,6 +20,7 @@ namespace Cafe_MC22_Management.DAL
             DataTable data = new DataTable();
 
             if (parameter != null)
+            {
                 for (int i = 0; i < parameter.Length; i++)
                 {
                     query += " N'" + Convert.ToString(parameter[i]) + "'";
