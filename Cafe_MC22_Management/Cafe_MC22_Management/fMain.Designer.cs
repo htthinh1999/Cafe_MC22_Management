@@ -40,9 +40,9 @@ namespace Cafe_MC22_Management
             this.btnBackup = new DevExpress.XtraBars.BarButtonItem();
             this.btnRestore = new DevExpress.XtraBars.BarButtonItem();
             this.btnTutorial = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSoftwareInformation = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSoftwareInfo = new DevExpress.XtraBars.BarButtonItem();
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
-            this.btnTableList = new DevExpress.XtraBars.BarButtonItem();
+            this.btnTableManager = new DevExpress.XtraBars.BarButtonItem();
             this.btnRevenue = new DevExpress.XtraBars.BarButtonItem();
             this.btnFood = new DevExpress.XtraBars.BarButtonItem();
             this.btnCategory = new DevExpress.XtraBars.BarButtonItem();
@@ -52,10 +52,10 @@ namespace Cafe_MC22_Management
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rbpgHelp = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rbpgAdmin = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCL)).BeginInit();
@@ -75,9 +75,9 @@ namespace Cafe_MC22_Management
             this.btnBackup,
             this.btnRestore,
             this.btnTutorial,
-            this.btnSoftwareInformation,
+            this.btnSoftwareInfo,
             this.skinRibbonGalleryBarItem1,
-            this.btnTableList,
+            this.btnTableManager,
             this.btnRevenue,
             this.btnFood,
             this.btnCategory,
@@ -109,8 +109,8 @@ namespace Cafe_MC22_Management
             // 
             this.btnLogin.Caption = "Đăng nhập";
             this.btnLogin.Id = 2;
-            this.btnLogin.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.btnLogin.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.btnLogin.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.ImageOptions.Image")));
+            this.btnLogin.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.ImageOptions.LargeImage")));
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -118,7 +118,7 @@ namespace Cafe_MC22_Management
             // 
             this.btnChangePass.Caption = "Đổi mật khẩu";
             this.btnChangePass.Id = 3;
-            this.btnChangePass.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
+            this.btnChangePass.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnChangePass.ImageOptions.SvgImage")));
             this.btnChangePass.Name = "btnChangePass";
             this.btnChangePass.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
             // 
@@ -126,8 +126,8 @@ namespace Cafe_MC22_Management
             // 
             this.btnLogout.Caption = "Đăng xuất";
             this.btnLogout.Id = 4;
-            this.btnLogout.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.btnLogout.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.btnLogout.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.ImageOptions.Image")));
+            this.btnLogout.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnLogout.ImageOptions.LargeImage")));
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
             // 
@@ -135,8 +135,8 @@ namespace Cafe_MC22_Management
             // 
             this.btnInformation.Caption = "Thông tin tài khoản";
             this.btnInformation.Id = 5;
-            this.btnInformation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.btnInformation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.btnInformation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInformation.ImageOptions.Image")));
+            this.btnInformation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnInformation.ImageOptions.LargeImage")));
             this.btnInformation.Name = "btnInformation";
             this.btnInformation.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -144,8 +144,8 @@ namespace Cafe_MC22_Management
             // 
             this.btnBackup.Caption = "Sao lưu dữ liệu";
             this.btnBackup.Id = 6;
-            this.btnBackup.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.btnBackup.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.btnBackup.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBackup.ImageOptions.Image")));
+            this.btnBackup.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBackup.ImageOptions.LargeImage")));
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
             // 
@@ -153,8 +153,8 @@ namespace Cafe_MC22_Management
             // 
             this.btnRestore.Caption = "Phục hồi dữ liệu";
             this.btnRestore.Id = 7;
-            this.btnRestore.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
-            this.btnRestore.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
+            this.btnRestore.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRestore.ImageOptions.Image")));
+            this.btnRestore.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnRestore.ImageOptions.LargeImage")));
             this.btnRestore.Name = "btnRestore";
             this.btnRestore.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
             // 
@@ -162,19 +162,19 @@ namespace Cafe_MC22_Management
             // 
             this.btnTutorial.Caption = "Hướng dẫn";
             this.btnTutorial.Id = 9;
-            this.btnTutorial.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
-            this.btnTutorial.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
+            this.btnTutorial.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTutorial.ImageOptions.Image")));
+            this.btnTutorial.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTutorial.ImageOptions.LargeImage")));
             this.btnTutorial.Name = "btnTutorial";
             this.btnTutorial.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
-            // btnSoftwareInformation
+            // btnSoftwareInfo
             // 
-            this.btnSoftwareInformation.Caption = "Thông tin phần mềm";
-            this.btnSoftwareInformation.Id = 10;
-            this.btnSoftwareInformation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
-            this.btnSoftwareInformation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
-            this.btnSoftwareInformation.Name = "btnSoftwareInformation";
-            this.btnSoftwareInformation.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnSoftwareInfo.Caption = "Thông tin phần mềm";
+            this.btnSoftwareInfo.Id = 10;
+            this.btnSoftwareInfo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSoftwareInformation.ImageOptions.Image")));
+            this.btnSoftwareInfo.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSoftwareInformation.ImageOptions.LargeImage")));
+            this.btnSoftwareInfo.Name = "btnSoftwareInfo";
+            this.btnSoftwareInfo.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // skinRibbonGalleryBarItem1
             // 
@@ -182,21 +182,21 @@ namespace Cafe_MC22_Management
             this.skinRibbonGalleryBarItem1.Id = 12;
             this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
-            // btnTableList
+            // btnTableManager
             // 
-            this.btnTableList.Caption = "Danh sách các bàn";
-            this.btnTableList.Id = 13;
-            this.btnTableList.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
-            this.btnTableList.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
-            this.btnTableList.Name = "btnTableList";
-            this.btnTableList.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnTableManager.Caption = "Danh sách các bàn";
+            this.btnTableManager.Id = 13;
+            this.btnTableManager.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTableList.ImageOptions.Image")));
+            this.btnTableManager.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTableList.ImageOptions.LargeImage")));
+            this.btnTableManager.Name = "btnTableManager";
+            this.btnTableManager.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // btnRevenue
             // 
             this.btnRevenue.Caption = "Doanh thu";
             this.btnRevenue.Id = 14;
-            this.btnRevenue.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.Image")));
-            this.btnRevenue.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.LargeImage")));
+            this.btnRevenue.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRevenue.ImageOptions.Image")));
+            this.btnRevenue.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnRevenue.ImageOptions.LargeImage")));
             this.btnRevenue.Name = "btnRevenue";
             this.btnRevenue.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -204,7 +204,7 @@ namespace Cafe_MC22_Management
             // 
             this.btnFood.Caption = "Món ăn";
             this.btnFood.Id = 15;
-            this.btnFood.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
+            this.btnFood.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnFood.ImageOptions.SvgImage")));
             this.btnFood.Name = "btnFood";
             this.btnFood.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -212,8 +212,8 @@ namespace Cafe_MC22_Management
             // 
             this.btnCategory.Caption = "Danh mục";
             this.btnCategory.Id = 16;
-            this.btnCategory.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
-            this.btnCategory.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
+            this.btnCategory.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCategory.ImageOptions.Image")));
+            this.btnCategory.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnCategory.ImageOptions.LargeImage")));
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -221,8 +221,8 @@ namespace Cafe_MC22_Management
             // 
             this.btnTable.Caption = "Bàn ăn";
             this.btnTable.Id = 17;
-            this.btnTable.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.Image")));
-            this.btnTable.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.ImageOptions.LargeImage")));
+            this.btnTable.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTable.ImageOptions.Image")));
+            this.btnTable.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTable.ImageOptions.LargeImage")));
             this.btnTable.Name = "btnTable";
             this.btnTable.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -230,8 +230,8 @@ namespace Cafe_MC22_Management
             // 
             this.barAccount.Caption = "Tài khoản";
             this.barAccount.Id = 18;
-            this.barAccount.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.Image")));
-            this.barAccount.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.ImageOptions.LargeImage")));
+            this.barAccount.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barAccount.ImageOptions.Image")));
+            this.barAccount.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barAccount.ImageOptions.LargeImage")));
             this.barAccount.Name = "barAccount";
             this.barAccount.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -241,7 +241,7 @@ namespace Cafe_MC22_Management
             this.ribbonPageGroup1,
             this.ribbonPageGroup3,
             this.ribbonPageGroup4,
-            this.ribbonPageGroup5});
+            this.rbpgHelp});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Hệ thống";
             // 
@@ -267,36 +267,36 @@ namespace Cafe_MC22_Management
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "Giao diện";
             // 
-            // ribbonPageGroup5
+            // rbpgHelp
             // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.btnTutorial);
-            this.ribbonPageGroup5.ItemLinks.Add(this.btnSoftwareInformation);
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.Text = "Trợ giúp";
+            this.rbpgHelp.ItemLinks.Add(this.btnTutorial);
+            this.rbpgHelp.ItemLinks.Add(this.btnSoftwareInfo);
+            this.rbpgHelp.Name = "rbpgHelp";
+            this.rbpgHelp.Text = "Trợ giúp";
             // 
             // ribbonPage2
             // 
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup2,
-            this.ribbonPageGroup6});
+            this.rbpgAdmin});
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "Quản lý";
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.btnTableList);
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnTableManager);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Nhân viên";
             // 
-            // ribbonPageGroup6
+            // rbpgAdmin
             // 
-            this.ribbonPageGroup6.ItemLinks.Add(this.btnRevenue);
-            this.ribbonPageGroup6.ItemLinks.Add(this.btnFood);
-            this.ribbonPageGroup6.ItemLinks.Add(this.btnCategory);
-            this.ribbonPageGroup6.ItemLinks.Add(this.btnTable);
-            this.ribbonPageGroup6.ItemLinks.Add(this.barAccount);
-            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            this.ribbonPageGroup6.Text = "Quản trị viên";
+            this.rbpgAdmin.ItemLinks.Add(this.btnRevenue);
+            this.rbpgAdmin.ItemLinks.Add(this.btnFood);
+            this.rbpgAdmin.ItemLinks.Add(this.btnCategory);
+            this.rbpgAdmin.ItemLinks.Add(this.btnTable);
+            this.rbpgAdmin.ItemLinks.Add(this.barAccount);
+            this.rbpgAdmin.Name = "rbpgAdmin";
+            this.rbpgAdmin.Text = "Quản trị viên";
             // 
             // ribbonStatusBar
             // 
@@ -342,16 +342,16 @@ namespace Cafe_MC22_Management
         private DevExpress.XtraBars.BarButtonItem btnBackup;
         private DevExpress.XtraBars.BarButtonItem btnRestore;
         private DevExpress.XtraBars.BarButtonItem btnTutorial;
-        private DevExpress.XtraBars.BarButtonItem btnSoftwareInformation;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
+        private DevExpress.XtraBars.BarButtonItem btnSoftwareInfo;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup rbpgHelp;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
         private DevExpress.Utils.ImageCollection imageCL;
-        private DevExpress.XtraBars.BarButtonItem btnTableList;
+        private DevExpress.XtraBars.BarButtonItem btnTableManager;
         private DevExpress.XtraBars.BarButtonItem btnRevenue;
         private DevExpress.XtraBars.BarButtonItem btnFood;
         private DevExpress.XtraBars.BarButtonItem btnCategory;
         private DevExpress.XtraBars.BarButtonItem btnTable;
         private DevExpress.XtraBars.BarButtonItem barAccount;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup rbpgAdmin;
     }
 }
