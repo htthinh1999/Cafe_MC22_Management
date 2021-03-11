@@ -171,8 +171,8 @@ namespace Cafe_MC22_Management
             // 
             this.btnSoftwareInfo.Caption = "Thông tin phần mềm";
             this.btnSoftwareInfo.Id = 10;
-            this.btnSoftwareInfo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSoftwareInformation.ImageOptions.Image")));
-            this.btnSoftwareInfo.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSoftwareInformation.ImageOptions.LargeImage")));
+            this.btnSoftwareInfo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSoftwareInfo.ImageOptions.Image")));
+            this.btnSoftwareInfo.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSoftwareInfo.ImageOptions.LargeImage")));
             this.btnSoftwareInfo.Name = "btnSoftwareInfo";
             this.btnSoftwareInfo.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -186,8 +186,8 @@ namespace Cafe_MC22_Management
             // 
             this.btnTableManager.Caption = "Danh sách các bàn";
             this.btnTableManager.Id = 13;
-            this.btnTableManager.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTableList.ImageOptions.Image")));
-            this.btnTableManager.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTableList.ImageOptions.LargeImage")));
+            this.btnTableManager.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTableManager.ImageOptions.Image")));
+            this.btnTableManager.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTableManager.ImageOptions.LargeImage")));
             this.btnTableManager.Name = "btnTableManager";
             this.btnTableManager.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
@@ -318,6 +318,7 @@ namespace Cafe_MC22_Management
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "PHẦN MỀM QUẢN LÝ QUÁN CAFE MC22";
+            this.Load += new System.EventHandler(this.fMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCL)).EndInit();
             this.ResumeLayout(false);
