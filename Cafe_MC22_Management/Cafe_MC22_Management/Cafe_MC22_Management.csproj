@@ -67,6 +67,12 @@
     <Compile Include="fAccountInfo.Designer.cs">
       <DependentUpon>fAccountInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="fChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChangePassword.Designer.cs">
+      <DependentUpon>fChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
