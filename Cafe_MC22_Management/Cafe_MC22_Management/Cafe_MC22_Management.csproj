@@ -61,6 +61,12 @@
     <Compile Include="fAccount.Designer.cs">
       <DependentUpon>fAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="fAccountInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAccountInfo.Designer.cs">
+      <DependentUpon>fAccountInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
