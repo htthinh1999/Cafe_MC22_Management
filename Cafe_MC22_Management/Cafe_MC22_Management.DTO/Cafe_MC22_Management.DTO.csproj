@@ -39,6 +39,7 @@
     <Compile Include="Account.cs" />
     <Compile Include="AccountType.cs" />
     <Compile Include="Bill.cs" />
+    <Compile Include="BillInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Data" />
