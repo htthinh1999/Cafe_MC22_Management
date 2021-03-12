@@ -205,6 +205,12 @@
     <Compile Include="fFood.Designer.cs">
       <DependentUpon>fFood.cs</DependentUpon>
     </Compile>
+    <Compile Include="fFoodCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFoodCategory.Designer.cs">
+      <DependentUpon>fFoodCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
