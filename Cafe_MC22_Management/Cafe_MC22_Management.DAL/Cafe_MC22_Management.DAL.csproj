@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DAL_Food.cs" />
     <Compile Include="DAL_FoodCategory.cs" />
     <Compile Include="DAL_BillTableInfo.cs" />
     <Compile Include="DAL_AccountType.cs" />
@@ -52,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cafe_MC22_Management.DTO\Cafe_MC22_Management.DTO.csproj">
-      <Project>{debff533-8ac9-4dc2-960d-e9014a2ed49f}</Project>
+      <Project>{DEBFF533-8AC9-4DC2-960D-E9014A2ED49F}</Project>
       <Name>Cafe_MC22_Management.DTO</Name>
     </ProjectReference>
   </ItemGroup>
