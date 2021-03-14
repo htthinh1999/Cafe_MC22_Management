@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DAL_FoodCategory.cs" />
     <Compile Include="DataProvider.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -41,6 +42,12 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cafe_MC22_Management.DTO\Cafe_MC22_Management.DTO.csproj">
+      <Project>{DEBFF533-8AC9-4DC2-960D-E9014A2ED49F}</Project>
+      <Name>Cafe_MC22_Management.DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
