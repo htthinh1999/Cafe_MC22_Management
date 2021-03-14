@@ -239,6 +239,12 @@
     <Compile Include="fMain.Designer.cs">
       <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSoftwareInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSoftwareInfo.Designer.cs">
+      <DependentUpon>fSoftwareInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="fRevenue.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSoftwareInfo.resx">
+      <DependentUpon>fSoftwareInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fRestore.resx">
       <DependentUpon>fRestore.cs</DependentUpon>
