@@ -40,6 +40,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_Account.cs" />
+    <Compile Include="DataProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
   </ItemGroup>
@@ -48,9 +52,6 @@
       <Project>{debff533-8ac9-4dc2-960d-e9014a2ed49f}</Project>
       <Name>Cafe_MC22_Management.DTO</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="DataProvider.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
