@@ -33,18 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DAL_Food.cs" />
-    <Compile Include="DAL_FoodCategory.cs" />
-    <Compile Include="DAL_BillTableInfo.cs" />
-    <Compile Include="DAL_AccountType.cs" />
-    <Compile Include="DataProvider.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_Food.cs" />
+    <Compile Include="DAL_FoodCategory.cs" />
+    <Compile Include="DAL_BillTableInfo.cs" />
     <Compile Include="DAL_Bill.cs" />
     <Compile Include="DAL_Account.cs" />
+    <Compile Include="DAL_AccountType.cs" />
+    <Compile Include="DAL_State.cs" />
     <Compile Include="DataProvider.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -53,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cafe_MC22_Management.DTO\Cafe_MC22_Management.DTO.csproj">
-      <Project>{DEBFF533-8AC9-4DC2-960D-E9014A2ED49F}</Project>
+      <Project>{debff533-8ac9-4dc2-960d-e9014a2ed49f}</Project>
       <Name>Cafe_MC22_Management.DTO</Name>
     </ProjectReference>
   </ItemGroup>
