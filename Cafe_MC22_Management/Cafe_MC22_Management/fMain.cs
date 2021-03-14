@@ -238,5 +238,10 @@ namespace Cafe_MC22_Management
         }
 
         #endregion
+
+        private void fMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
