@@ -7,29 +7,23 @@ using System.Threading.Tasks;
 
 namespace Cafe_MC22_Management.DTO
 {
-    public class Food
+    public class State
     {
         public int ID { get; private set; }
         public string Name { get; private set; }
-        public int IDFoodCategory { get; private set; }
-        public float Price { get; private set; }
 
-        public Food() { }
+        public State() { }
 
-        public Food(int id, string name, int idFoodCategory, float price)
+        public State(int id, string name)
         {
             ID = id;
             Name = name;
-            IDFoodCategory = idFoodCategory;
-            Price = price;
         }
 
-        public Food(DataRow row)
+        public State(DataRow row)
         {
             ID = (int)row["id"];
             Name = row["name"].ToString();
-            IDFoodCategory = (int)row["idCategory"];
-            Price = float.Parse(row["price"].ToString());
         }
     }
 }

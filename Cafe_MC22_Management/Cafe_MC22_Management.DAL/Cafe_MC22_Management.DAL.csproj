@@ -33,11 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DAL_TableFood.cs" />
-    <Compile Include="DataProvider.cs" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Compile Include="DAL_Food.cs" />
+    <Compile Include="DAL_FoodCategory.cs" />
+    <Compile Include="DAL_BillTableInfo.cs" />
+    <Compile Include="DAL_Bill.cs" />
+    <Compile Include="DAL_Account.cs" />
+    <Compile Include="DAL_AccountType.cs" />
+    <Compile Include="DAL_State.cs" />
+    <Compile Include="DAL_TableFood.cs" />
+    <Compile Include="DataProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
