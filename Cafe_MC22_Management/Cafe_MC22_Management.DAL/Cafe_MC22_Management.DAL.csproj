@@ -35,5 +35,26 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL_Food.cs" />
+    <Compile Include="DAL_FoodCategory.cs" />
+    <Compile Include="DAL_BillTableInfo.cs" />
+    <Compile Include="DAL_Bill.cs" />
+    <Compile Include="DAL_Account.cs" />
+    <Compile Include="DAL_AccountType.cs" />
+    <Compile Include="DAL_State.cs" />
+    <Compile Include="DAL_TableFood.cs" />
+    <Compile Include="DataProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cafe_MC22_Management.DTO\Cafe_MC22_Management.DTO.csproj">
+      <Project>{debff533-8ac9-4dc2-960d-e9014a2ed49f}</Project>
+      <Name>Cafe_MC22_Management.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
