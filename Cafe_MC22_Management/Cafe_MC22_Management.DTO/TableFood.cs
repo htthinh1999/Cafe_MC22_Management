@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cafe_MC22_Management.DTO
 {
-    class TableFood
+    public class TableFood
     {
         public int ID { get; private set; }
         public string Name { get; private set; }
