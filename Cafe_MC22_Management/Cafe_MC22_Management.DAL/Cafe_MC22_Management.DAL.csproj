@@ -34,10 +34,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DAL_Food.cs" />
+    <Compile Include="DAL_FoodCategory.cs" />
+    <Compile Include="DAL_BillTableInfo.cs" />
+    <Compile Include="DAL_AccountType.cs" />
     <Compile Include="DataProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL_Bill.cs" />
+    <Compile Include="DAL_Account.cs" />
+    <Compile Include="DataProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
