@@ -43,6 +43,7 @@
     <Compile Include="DAL_Account.cs" />
     <Compile Include="DAL_AccountType.cs" />
     <Compile Include="DAL_State.cs" />
+    <Compile Include="DAL_TableFood.cs" />
     <Compile Include="DataProvider.cs" />
   </ItemGroup>
   <ItemGroup>
