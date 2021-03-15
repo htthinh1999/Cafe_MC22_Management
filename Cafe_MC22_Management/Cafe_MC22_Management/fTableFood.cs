@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using Cafe_MC22_Management.DAL;
 
 namespace Cafe_MC22_Management
 {

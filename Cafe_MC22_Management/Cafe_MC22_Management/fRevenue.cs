@@ -8,6 +8,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using Cafe_MC22_Management.DAL;
+using ComboBox = System.Windows.Forms.ComboBox;
+using DevExpress.XtraReports.UI;
 
 namespace Cafe_MC22_Management
 {

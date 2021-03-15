@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 468);
             this.Name = "fTutorial";
-            this.Text = "HƯỠNG DẪN SỬ DỤNG";
+            this.Text = "HƯỚNG DẪN SỬ DỤNG";
             this.ResumeLayout(false);
 
         }

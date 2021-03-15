@@ -36,6 +36,7 @@
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -60,7 +61,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(107, 83);
+            this.labelControl3.Location = new System.Drawing.Point(107, 65);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(176, 16);
             this.labelControl3.TabIndex = 2;
@@ -70,7 +71,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(289, 83);
+            this.labelControl4.Location = new System.Drawing.Point(289, 65);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(131, 16);
             this.labelControl4.TabIndex = 3;
@@ -78,49 +79,60 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(107, 105);
+            this.labelControl5.Location = new System.Drawing.Point(18, 124);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(41, 16);
+            this.labelControl5.Size = new System.Drawing.Size(116, 16);
             this.labelControl5.TabIndex = 4;
-            this.labelControl5.Text = "E-mail:";
+            this.labelControl5.Text = "Huỳnh Tấn Thịnh";
             // 
             // labelControl6
             // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(107, 127);
+            this.labelControl6.Location = new System.Drawing.Point(146, 124);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(30, 16);
+            this.labelControl6.Size = new System.Drawing.Size(91, 16);
             this.labelControl6.TabIndex = 5;
-            this.labelControl6.Text = "SĐT:";
+            this.labelControl6.Text = "Đinh Đức Bắc";
             // 
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(154, 105);
+            this.labelControl7.Location = new System.Drawing.Point(248, 124);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(184, 16);
+            this.labelControl7.Size = new System.Drawing.Size(115, 16);
             this.labelControl7.TabIndex = 6;
-            this.labelControl7.Text = "htthinh1999@keycode.com";
+            this.labelControl7.Text = "Hoàng Phước An";
             // 
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(154, 127);
+            this.labelControl8.Location = new System.Drawing.Point(375, 124);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(126, 16);
+            this.labelControl8.Size = new System.Drawing.Size(111, 16);
             this.labelControl8.TabIndex = 7;
-            this.labelControl8.Text = "(+84) 0977 393 641";
+            this.labelControl8.Text = "Nguyễn Duy Đạt";
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Location = new System.Drawing.Point(197, 100);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(102, 16);
+            this.labelControl9.TabIndex = 8;
+            this.labelControl9.Text = "Đội ngũ phát triển";
             // 
             // fSoftwareInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 168);
+            this.ClientSize = new System.Drawing.Size(511, 156);
+            this.Controls.Add(this.labelControl9);
             this.Controls.Add(this.labelControl8);
             this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.labelControl6);
@@ -149,5 +161,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
     }
 }

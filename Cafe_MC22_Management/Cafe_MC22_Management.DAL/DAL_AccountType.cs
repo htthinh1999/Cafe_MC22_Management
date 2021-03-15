@@ -8,7 +8,7 @@ using Cafe_MC22_Management.DTO;
 
 namespace Cafe_MC22_Management.DAL
 {
-    class DAL_AccountType
+    public class DAL_AccountType
     {
         static DAL_AccountType instance;
         public static DAL_AccountType Instance

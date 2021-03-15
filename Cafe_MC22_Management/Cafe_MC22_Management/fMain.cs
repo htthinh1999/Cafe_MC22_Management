@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraBars;
+﻿using Cafe_MC22_Management.DTO;
+using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
@@ -239,9 +240,5 @@ namespace Cafe_MC22_Management
 
         #endregion
 
-        private void fMain_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

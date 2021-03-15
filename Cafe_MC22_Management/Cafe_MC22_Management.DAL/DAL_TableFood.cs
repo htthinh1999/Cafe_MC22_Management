@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Cafe_MC22_Management.DAL
 {
-    class DAL_TableFood
+    public class DAL_TableFood
     {
         static DAL_TableFood instance;
         public static DAL_TableFood Instance

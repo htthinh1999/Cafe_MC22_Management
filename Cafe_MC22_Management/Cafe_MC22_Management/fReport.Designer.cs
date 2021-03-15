@@ -74,8 +74,8 @@
             // 
             // sqlDataSource1
             // 
-            this.sqlDataSource1.ConnectionName = "localhost_QuanLyQuanCafe_Connection";
-            this.sqlDataSource1.Name = "sqlDataSource1";
+            this.sqlDataSource1.ConnectionName = "QuanLyQuanCafeConnectionString";
+            this.sqlDataSource1.Name = "QuanLyQuanCafeDataSet";
             storedProcQuery1.Name = "USP_GetListBillCheckedOutByDate";
             queryParameter1.Name = "@fromDate";
             queryParameter1.Type = typeof(DevExpress.DataAccess.Expression);

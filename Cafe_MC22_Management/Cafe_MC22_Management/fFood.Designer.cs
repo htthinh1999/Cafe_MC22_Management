@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fFood));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.cbxState = new System.Windows.Forms.ComboBox();
             this.btnRefresh = new DevExpress.XtraEditors.SimpleButton();
             this.txtSearch = new DevExpress.XtraEditors.TextEdit();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
@@ -60,10 +61,9 @@
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.cbxState = new System.Windows.Forms.ComboBox();
-            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtSearch.Properties)).BeginInit();
@@ -82,9 +82,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -105,6 +105,15 @@
             this.layoutControl1.Size = new System.Drawing.Size(558, 168);
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // cbxState
+            // 
+            this.cbxState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxState.FormattingEnabled = true;
+            this.cbxState.Location = new System.Drawing.Point(64, 109);
+            this.cbxState.Name = "cbxState";
+            this.cbxState.Size = new System.Drawing.Size(482, 21);
+            this.cbxState.TabIndex = 13;
             // 
             // btnRefresh
             // 
@@ -401,6 +410,15 @@
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.Control = this.cbxState;
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 97);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(538, 25);
+            this.layoutControlItem8.Text = "Trạng thái";
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(49, 13);
+            // 
             // gridControl
             // 
             this.gridControl.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -421,24 +439,6 @@
             this.gridView.OptionsFind.Condition = DevExpress.Data.Filtering.FilterCondition.Like;
             this.gridView.OptionsFind.FindNullPrompt = "Nhập một vài chữ để tìm kiếm ...";
             this.gridView.OptionsView.ShowGroupPanel = false;
-            // 
-            // cbxState
-            // 
-            this.cbxState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxState.FormattingEnabled = true;
-            this.cbxState.Location = new System.Drawing.Point(64, 109);
-            this.cbxState.Name = "cbxState";
-            this.cbxState.Size = new System.Drawing.Size(482, 21);
-            this.cbxState.TabIndex = 13;
-            // 
-            // layoutControlItem8
-            // 
-            this.layoutControlItem8.Control = this.cbxState;
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 97);
-            this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(538, 25);
-            this.layoutControlItem8.Text = "Trạng thái";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(49, 13);
             // 
             // fFood
             // 
@@ -472,9 +472,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

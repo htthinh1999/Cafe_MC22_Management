@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Cafe_MC22_Management.DAL
 {
-    class DAL_State
+    public class DAL_State
     {
         static DAL_State instance;
         public static DAL_State Instance

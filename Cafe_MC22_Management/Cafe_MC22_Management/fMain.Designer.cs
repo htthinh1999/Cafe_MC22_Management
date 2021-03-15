@@ -57,12 +57,16 @@ namespace Cafe_MC22_Management
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpgAdmin = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.tabMDI = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabMDI)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
             // 
+            this.ribbon.AutoHideEmptyItems = true;
+            this.ribbon.AutoSizeItems = true;
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Images = this.imageCL;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -89,8 +93,10 @@ namespace Cafe_MC22_Management
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.ribbonPage2});
+            this.ribbon.ShowItemCaptionsInPageHeader = true;
             this.ribbon.Size = new System.Drawing.Size(1094, 158);
             this.ribbon.StatusBar = this.ribbonStatusBar;
+            this.ribbon.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.True;
             // 
             // imageCL
             // 
@@ -113,50 +119,61 @@ namespace Cafe_MC22_Management
             this.btnLogin.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.ImageOptions.LargeImage")));
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnLogin.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLogin_ItemClick);
             // 
             // btnChangePass
             // 
             this.btnChangePass.Caption = "Đổi mật khẩu";
+            this.btnChangePass.Enabled = false;
             this.btnChangePass.Id = 3;
             this.btnChangePass.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnChangePass.ImageOptions.SvgImage")));
             this.btnChangePass.Name = "btnChangePass";
             this.btnChangePass.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            this.btnChangePass.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnChangePass_ItemClick);
             // 
             // btnLogout
             // 
             this.btnLogout.Caption = "Đăng xuất";
+            this.btnLogout.Enabled = false;
             this.btnLogout.Id = 4;
             this.btnLogout.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.ImageOptions.Image")));
             this.btnLogout.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnLogout.ImageOptions.LargeImage")));
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            this.btnLogout.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLogout_ItemClick);
             // 
             // btnInformation
             // 
             this.btnInformation.Caption = "Thông tin tài khoản";
+            this.btnInformation.Enabled = false;
             this.btnInformation.Id = 5;
             this.btnInformation.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInformation.ImageOptions.Image")));
             this.btnInformation.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnInformation.ImageOptions.LargeImage")));
             this.btnInformation.Name = "btnInformation";
             this.btnInformation.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnInformation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInformation_ItemClick);
             // 
             // btnBackup
             // 
             this.btnBackup.Caption = "Sao lưu dữ liệu";
+            this.btnBackup.Enabled = false;
             this.btnBackup.Id = 6;
             this.btnBackup.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBackup.ImageOptions.Image")));
             this.btnBackup.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBackup.ImageOptions.LargeImage")));
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            this.btnBackup.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBackup_ItemClick);
             // 
             // btnRestore
             // 
             this.btnRestore.Caption = "Phục hồi dữ liệu";
+            this.btnRestore.Enabled = false;
             this.btnRestore.Id = 7;
             this.btnRestore.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRestore.ImageOptions.Image")));
             this.btnRestore.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnRestore.ImageOptions.LargeImage")));
             this.btnRestore.Name = "btnRestore";
             this.btnRestore.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            this.btnRestore.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRestore_ItemClick);
             // 
             // btnTutorial
             // 
@@ -166,6 +183,7 @@ namespace Cafe_MC22_Management
             this.btnTutorial.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTutorial.ImageOptions.LargeImage")));
             this.btnTutorial.Name = "btnTutorial";
             this.btnTutorial.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnTutorial.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTutorial_ItemClick);
             // 
             // btnSoftwareInfo
             // 
@@ -175,6 +193,7 @@ namespace Cafe_MC22_Management
             this.btnSoftwareInfo.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSoftwareInfo.ImageOptions.LargeImage")));
             this.btnSoftwareInfo.Name = "btnSoftwareInfo";
             this.btnSoftwareInfo.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnSoftwareInfo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSoftwareInfo_ItemClick);
             // 
             // skinRibbonGalleryBarItem1
             // 
@@ -185,55 +204,67 @@ namespace Cafe_MC22_Management
             // btnTableManager
             // 
             this.btnTableManager.Caption = "Danh sách các bàn";
+            this.btnTableManager.Enabled = false;
             this.btnTableManager.Id = 13;
             this.btnTableManager.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTableManager.ImageOptions.Image")));
             this.btnTableManager.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTableManager.ImageOptions.LargeImage")));
             this.btnTableManager.Name = "btnTableManager";
             this.btnTableManager.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnTableManager.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTableManager_ItemClick);
             // 
             // btnRevenue
             // 
             this.btnRevenue.Caption = "Doanh thu";
+            this.btnRevenue.Enabled = false;
             this.btnRevenue.Id = 14;
             this.btnRevenue.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRevenue.ImageOptions.Image")));
             this.btnRevenue.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnRevenue.ImageOptions.LargeImage")));
             this.btnRevenue.Name = "btnRevenue";
             this.btnRevenue.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnRevenue.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRevenue_ItemClick);
             // 
             // btnFood
             // 
             this.btnFood.Caption = "Món ăn";
+            this.btnFood.Enabled = false;
             this.btnFood.Id = 15;
             this.btnFood.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnFood.ImageOptions.SvgImage")));
             this.btnFood.Name = "btnFood";
             this.btnFood.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnFood.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnFood_ItemClick);
             // 
             // btnCategory
             // 
             this.btnCategory.Caption = "Danh mục";
+            this.btnCategory.Enabled = false;
             this.btnCategory.Id = 16;
             this.btnCategory.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCategory.ImageOptions.Image")));
             this.btnCategory.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnCategory.ImageOptions.LargeImage")));
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnCategory.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnFoodCategory_ItemClick);
             // 
             // btnTable
             // 
             this.btnTable.Caption = "Bàn ăn";
+            this.btnTable.Enabled = false;
             this.btnTable.Id = 17;
             this.btnTable.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTable.ImageOptions.Image")));
             this.btnTable.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTable.ImageOptions.LargeImage")));
             this.btnTable.Name = "btnTable";
             this.btnTable.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnTable.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTableFood_ItemClick);
             // 
             // barAccount
             // 
             this.barAccount.Caption = "Tài khoản";
+            this.barAccount.Enabled = false;
             this.barAccount.Id = 18;
             this.barAccount.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barAccount.ImageOptions.Image")));
             this.barAccount.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barAccount.ImageOptions.LargeImage")));
             this.barAccount.Name = "barAccount";
             this.barAccount.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barAccount.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAccount_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -305,6 +336,10 @@ namespace Cafe_MC22_Management
             this.ribbonStatusBar.Ribbon = this.ribbon;
             this.ribbonStatusBar.Size = new System.Drawing.Size(1094, 24);
             // 
+            // tabMDI
+            // 
+            this.tabMDI.MdiParent = this;
+            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,9 +353,9 @@ namespace Cafe_MC22_Management
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "PHẦN MỀM QUẢN LÝ QUÁN CAFE MC22";
-            this.Load += new System.EventHandler(this.fMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabMDI)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,5 +389,6 @@ namespace Cafe_MC22_Management
         private DevExpress.XtraBars.BarButtonItem btnTable;
         private DevExpress.XtraBars.BarButtonItem barAccount;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rbpgAdmin;
+        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager tabMDI;
     }
 }
